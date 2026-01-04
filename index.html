@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.multiple-pic{
+    /* border:2px solid red; */
+    height:700px;
+    width:500px;
+    margin:0 auto;
+    position: relative;
+    font-family: monospace;
+
+}
+#swim-boy{
+    position:absolute;
+    top:90px;
+    z-index:0;
+}
+#ring{
+    position: absolute;
+    top:125px;
+    z-index:-1;
+}
+#water{
+    position: absolute;
+    top:160px;
+    z-index:-2;
+    
+}
+</style>
+
+<body>
+    <div class="multiple-pic">
+        <h2>z-index</h2>
+        <div id="swim-boy"><img src="./swim/boy.svg" alt="">
+        </div>
+        <div id="ring"><img src="./swim/ring.svg" alt=""></div>
+        <div id="water"><img src="./swim/water.svg" alt=""></div>
+    </div>
+</body>
+
+</html>
